@@ -1,0 +1,89 @@
+body{
+    background-color: whitesmoke;
+}
+
+.wrapper{
+    min-width:980px;
+    max-width:1440px;
+    margin: auto auto;
+    padding-top:1px;
+    padding-bottom:60px;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.jcarouselSimple{
+    position: relative;
+    margin: 0 auto;
+
+}
+.carousel-hider {
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    /*width: 650px;*/
+    border: 2px solid #999;
+    -webkit-box-shadow: 0 0 2px #999;
+  -moz-box-shadow: 0 0 2px #999;
+  box-shadow: 0 0 8px #999;
+  background-color: #999;
+ 
+}
+ 
+ 
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    font-size: 90px;
+    line-height: 0px;
+    margin-top: 90px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+ 
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    color: red;
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    margin-top: 0px;
+    padding: 0px;
+    position: relative;
+}
+ 
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+ 
+.carousel-element img {
+    display: block;
+    /*max-width: 300px;*/
+}
+
+.carousel-description{
+    font-size: 18px;
+    text-align: center;
+    background-color: lightgray;
+    line-height: 32px;
+    margin: 0px;
+}
+

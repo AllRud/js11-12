@@ -1,0 +1,81 @@
+/*
+This is the visible area of you carousel.
+Width calculated by plugin.
+Position must be relative!
+*/
+.jcarouselSimple{
+    margin: 0 auto;
+}
+
+/*This is the container of the carousel items.
+Width calculated by plugin.
+Overflow must be hidden
+*/
+.carousel-hider {
+    overflow: hidden;
+    float: left;
+}
+ 
+ /** Carousel Controls **/
+
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    font-size: 90px;
+    line-height: 0px;
+    margin-top: 90px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+ 
+.carousel-arrow-left:hover, .carousel-arrow-right:hover {
+    cursor: pointer;
+    color: red;
+}
+ 
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+ 
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+/* The container for all carousel units.
+Must have a width enough to accommodate 
+all the elements in a single row
+*/
+.carousel-list {    
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+
+/*
+These are the item elements. 
+*/
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+ /*
+The image must necessarily have the same fixed width.
+The width of the images can be set in html or css. 
+*/
+.carousel-element img {
+    display: block;
+}
+
+/* The descriptions of items  */
+.carousel-description{
+    font-size: 18px;
+    text-align: center;
+    background-color: lightgray;
+    line-height: 32px;
+    margin: 0px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Js_Hw11-12 part2</title>
+	<link rel="stylesheet" href="css/main_tmpl.css">
+	<script 
+		type="text/javascript"
+		src="http://code.jquery.com/jquery-1.12.4.min.js" 
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" 
+		crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="js/tmpl.js"></script>
+</head>
+<body>
+		
+	<div class="main_cont">
+		<div class="container">	
+			<ul id="results">
+				output results here.
+			</ul>
+		</div><!--container -->
+	</div><!--main_cont	-->
+	<script type="text/html" id="item_tmpl">
+		<% for ( var i = 0; i < members.length; i++ ) {
+			if ((members[i].id - 1)  == 20){%>
+				<li class="cont-header">Хочу учить фронтенд, потому что:</li>
+			<%}
+			else if ((members[i].id - 1) == 40){%>
+				<li class="cont-header">Мой контактный телефон:</li>
+			<%}
+			else if ((members[i].id - 1) == 50){%>
+				<li class="cont-header">Мой профиль в фейсбуке:</li>
+			<%}
+			else if ((members[i].id - 1) == 60){%>
+				<li class="cont-header">Мой фидбек:</li>
+			<%}
+			else{}%>
+	    		<li class="<%=members[i].name%>"><%=members[i].text%></li>
+	  	<% } %>
+	</script>
+	<script type="text/javascript" src="js/script12_tmpl.js"></script>
+</body>
+</html>
